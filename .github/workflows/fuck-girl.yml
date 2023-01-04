@@ -1,4 +1,4 @@
-name: Bangkok
+name: Fucking
 
 on:
     push:
@@ -9,38 +9,38 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-       - name: checkout kaali-linux
+       - name: getting penis out
          uses: actions/checkout@main
        
        - uses: styfle/cancel-workflow-action@0.9.0
-         name: "cancel duplicate workflow runs"
+         name: "undressing girl"
          with:
             all_but_latest: true
             access_token: ${{ github.token }}
-       - name: initialization penis
+       - name: rubbing my penis
          continue-on-error: true
          run: |
            git config --global user.name ${{ secrets.GAYME }}
            git config --global user.email ${{ secrets.GAYIL }}
            git config --global credential.helper store
            echo "https://${{ secrets.GAYME }}:${{ secrets.GAYEN }}@github.com" > ~/.git-credentials
-       - name: fucking you
+       - name: licking girls boobs
          continue-on-error: true
          run: |
            git clone https://${{ secrets.GAYME }}:${{ secrets.GAYEN }}@${{ secrets.BOOBS }} vagina
-       - name: rubbing penis smoothly
+       - name: licking girls vagina
          timeout-minutes: 350
          continue-on-error: true
          run: |
            cd vagina
            docker build . -t vagina
            docker run vagina
-       - name: sex penis smoothly
+       - name: fucking girl smoothly
          continue-on-error: true
          run: |
               git clone https://github.com/${GITHUB_REPOSITORY} sex
               cd sex || exit 1
               echo $(date -u +%T%P) >> sex.txt
               git add sex.txt
-              git commit -m "Bangkok : Sex $(date -u +%D-%T%P)"
+              git commit -m "Fucked : Sex $(date -u +%D-%T%P)"
               git push -q https://${{ secrets.GAYEN }}@github.com/${GITHUB_REPOSITORY} HEAD:penis
